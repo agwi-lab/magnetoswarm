@@ -1,0 +1,16 @@
+{
+  "name": "magnetoswarm",
+  "version": "1.0.0",
+  "description": "Interactive, physically rigorous 2D simulation of metallic particle swarms in magnetically actuated fluid-filled elastic tubes.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "validate": "node validation/validate_fields.js && node validation/validate_dynamics.js && node validation/smoke_sim.js",
+    "validate:ui": "node validation/smoke_ui.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "canvas": "^3.1.0",
+    "jsdom": "^26.0.0"
+  }
+}
